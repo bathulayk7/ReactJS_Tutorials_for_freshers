@@ -1,10 +1,13 @@
-import RestOperator from "./components/es6-reeactjs/RestOperator";
+import HeaderPage from "./pages/HeaderPage";
+import AppRouter from "./pages-router/AppRouter";
+import { AuthProvider } from "./authContextStore/AuthProvider";
 
 const App = () => {
   return (
-    <div>
-      <RestOperator/>
-    </div>
+    <AuthProvider>
+        <HeaderPage />
+        <AppRouter />
+    </AuthProvider>
   );
 };
 
