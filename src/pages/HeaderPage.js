@@ -3,6 +3,16 @@ import logo from "../images/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { useCustomAuth } from "../authContextStore/AuthProvider";
 
+
+// const App = () => {
+//   return (
+//     <AuthProvider>
+//         <HeaderPage />
+//         <AppRouter />
+//     </AuthProvider>
+//   );
+// };
+
 const HeaderPage = () => {
   const {user}=useCustomAuth();
   return (
