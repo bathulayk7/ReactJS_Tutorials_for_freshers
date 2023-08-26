@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container h1 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container h1 img {
+  width: 50px;
+  height: 50px;
+}
+.tech {
+  margin-left: 5px;
+  color: aqua;
+}
+.container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+.container ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 5px;
+}
+.container ul li a:hover {
+  background-color: bisque;
+  border-radius: 5px;
+}
+.landed {
+  background: white url("/html-css/project1/modern.jpg") no-repeat scroll center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+.landed_wraper{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    flex: 1;
+  /* justify-content: center;     */
+}
+.landed .landed_wraper button{
+    background-color: aqua;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.landed .landed_wraper button:hover{
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    .container ul{
+        margin-top: 10px;
+    }
+    
+}

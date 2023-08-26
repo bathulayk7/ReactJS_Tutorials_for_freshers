@@ -14,7 +14,7 @@ const UseMemoHook = () => {
   };
 
 const even=useMemo(()=>{
-
+console.log("calling")
   let i=0;
   while(i<2000000000)i++;
   

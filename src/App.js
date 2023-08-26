@@ -2,10 +2,15 @@
 // import AppRouter from "./pages-router/AppRouter";
 // import { AuthProvider } from "./authContextStore/AuthProvider";
 
-import CurdOperations from "./components/json-server/CurdOperations";
+// import TestingCode from "./TestingCode";
+import CharRepeatCount from "./interview/CharRepeatCount";
+// import CancelApiCall from "./apiCallCancel/CancelApiCall";
+
+// import CurdOperations from "./components/json-server/CurdOperations";
 
 // import Counter from "./redux-app1/Counter";
 // import UserName from "./redux-app1/UserName";
+// import UserList from "./redux-app1/UserList";
 
 const App = () => {
   return (
@@ -14,11 +19,22 @@ const App = () => {
     //     <AppRouter />
     // </AuthProvider>
     <div className="container mt-2">
-  {/* <Counter/>
-  <br/>
+      
+      {/* <UseCallBack/> */}
+      {/* <TestingCode /> */}
+      <CharRepeatCount/>
+      {/* code="code" children="childrens" > */}
+        {/* <h2>Hi,Hello</h2> */}
+      {/* </TestingCode> */}
+      {/* <CancelApiCall/> */}
+  {/* <Counter/> */}
+  {/* <br/>
   <br/>
   <UserName/> */}
-  <CurdOperations/>
+  <br/>
+  <br/> 
+  {/* <UserList/> */}
+  {/* <CurdOperations/> */}
     </div>
   );
 };

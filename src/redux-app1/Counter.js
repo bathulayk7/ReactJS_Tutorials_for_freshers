@@ -28,13 +28,13 @@ const Counter = ({ count, handleDecement, handleIncement,handleReset }) => {
 };
 
 const mapStateToProps = (state) => {
-  return { count: state.counter.count };
+  return { count: state.counterReducer.count };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleDecement: () => dispatch(decrAction(1)),
-    handleIncement: () => dispatch(incrAction(1)),
+    handleDecement: () => dispatch(decrAction()),
+    handleIncement: () => dispatch(incrAction()),
     handleReset: () => dispatch(resetAction()),
   };
 };

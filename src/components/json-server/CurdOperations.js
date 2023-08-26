@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 //install:> npm i env-cmd
+//"build": "CI= react-scripts build",
+//npm run server
+// package.json--- "server": "json-server --port 3001 --watch db.json --host 127.0.0.1",
 const client = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,
 });
