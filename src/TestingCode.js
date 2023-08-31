@@ -1,25 +1,29 @@
 import React from "react";
 
 const TestingCode = () => {
+ 
+  let str="pencilandpen";
+let arr=str.split("")
+let pure=[...Array.from(new Set(str))]
 
-const str="aaabbcaabdddd";
-let unik=Array.from(new Set(str))
-let str1=str.split("");
-
-const counters=(ch)=>{
+let counter=(ch)=>{
   let count=0;
-  str1.forEach(element => {
-    if(element===ch)count++;
- });
- return count;
+  arr.forEach((item)=>{
+    if(item===ch){
+      count++
+    }
+  })
+  return count;
 }
 
-let finalStr="";
-for (const ch in unik) {
- finalStr+=unik[ch]+ counters(unik[ch])
-}
-console.log(finalStr)
+let res=""
 
+for(let i=0;i<pure.lenth;i++){
+  console.log("runnuiing")
+    res+=pure[i]+counter(pure[i])
+}
+
+console.log(res);
 
   return (
     <>

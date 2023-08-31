@@ -3,7 +3,10 @@
 // import { AuthProvider } from "./authContextStore/AuthProvider";
 
 // import TestingCode from "./TestingCode";
-import CharRepeatCount from "./interview/CharRepeatCount";
+import PageComp1 from "./pagenation/PageComp1";
+
+// import TestingCode from "./TestingCode";
+// import CharRepeatCount from "./interview/CharRepeatCount";
 // import CancelApiCall from "./apiCallCancel/CancelApiCall";
 
 // import CurdOperations from "./components/json-server/CurdOperations";
@@ -22,7 +25,8 @@ const App = () => {
       
       {/* <UseCallBack/> */}
       {/* <TestingCode /> */}
-      <CharRepeatCount/>
+      <PageComp1/>
+      {/* <CharRepeatCount/> */}
       {/* code="code" children="childrens" > */}
         {/* <h2>Hi,Hello</h2> */}
       {/* </TestingCode> */}
